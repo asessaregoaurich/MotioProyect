@@ -8,6 +8,24 @@
         <link rel="icon" href="imagenes/logo.png" type="image/x-icon">
     </head>
     <body>
+        <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        </script>
+
         <header class="navbar">
             <a href="index.html" class="logo">
                 <img src="imagenes/logo.png" alt="Motio Logo">
