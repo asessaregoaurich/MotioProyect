@@ -283,6 +283,24 @@ section p {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* <CHANGE> Mejoré los estilos de la imagen del equipo con mejor responsividad y visual */
+#sobrenosotros .equipo-imagen {
+    display: block;
+    margin: 40px auto;
+    max-width: 700px;
+    width: 95%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* <CHANGE> Agregué efecto hover para mayor interactividad */
+#sobrenosotros .equipo-imagen:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
 /* ---------------- FOOTER PROFESIONAL ---------------- */
 .main-footer {
     /* CORREGIDO: Fondo Azul Profundo de la paleta para que el texto blanco sea visible */
