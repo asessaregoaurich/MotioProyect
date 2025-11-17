@@ -252,7 +252,7 @@ section p {
 /* ---------------- SOBRE NOSOTROS ---------------- */
 #sobrenosotros ul {
     list-style: none;
-    margin: 30px auto;
+    margin: 5px auto;
     padding: 0;
     max-width: 1100px;
 }
